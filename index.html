@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Supplies</title>
+
+</head>
+<body>
+        <style>
+
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+            }
+
+            .flex-container {
+                display: flex;
+                background-color: cornsilk;
+            }
+
+            .flex-container > div {
+                background-color: cornsilk;
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+
+            h1{
+                border-style: solid;
+            }
+
+            #navbar{
+                position: fixed;
+                top: 0%;
+                width: 100%;
+                background-color: cornsilk;
+            }
+
+            ul{
+                margin: 0;
+            }
+        
+        header{
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 480px) {
+            body{ 
+                background-color:rgb(189, 133, 30);
+
+            }
+        
+        }
+        
+
+
+
+        .Column {
+            float: left;
+            width: 33.33%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+    </style>
+    <h1>Art Supplies</h1>
+
+    <div class="flex-container">
+        <div>Pencils</div>
+        <div>Paint</div>
+        <div>Canvas</div>
+
+    </div>
+    <ul id="navbar">
+               <a class="active" href="#home" style="color:black">Home</a>
+        <a href="about me" style="color:black">About Me</a>
+        <a href="contact" style="color:black">Contact me</a>
+        <a href="supplies" style="color:black">Supplies</a>  
+    </ul>
+     <img src="picture2.jpg" alt="Art by Elenagual" id="Header"> <br>
+
+
+
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/0evJ82qDWNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe id="video"> 
+    <form action="https://www.freecodecamp.com/email-submit" id="form"> 
+
+<input type="text" placeholder="Email", required>
+<input type="text" placeholder="Art supplies" required>
+<button type="submit">Submit</button>
+    </form>
+</body>
+</html>
